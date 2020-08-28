@@ -6,7 +6,10 @@ You have some number of bots lost in the city. Your goal is to find these bots a
 
 Full problem description: http://guavabot.cs170.org/problem/
 
-## Algorithm 
+## Algorithm summary
+Assign students a weighted trust value for their scouting, calculate shortest path from all nodes to home, put these in max queue, pop, scout the node, if majority true, remote, if not, add majority false nodes to another max queue for later processing, adjust trust values accordingly and repeat until all bots are at home 
+
+## Algorithms (two required, which is later condensed into one final algorithm)
 
 ### Algorithm 1 - Main Idea:
 Calculate Shortest path for all nodes , v -> H in graph G using Dijkstra's.
